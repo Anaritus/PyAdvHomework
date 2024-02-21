@@ -1,0 +1,5 @@
+Hi! This is a sample text.
+It has multiple lines.
+
+And even empty ones! (Also ends with an empty line)
+
