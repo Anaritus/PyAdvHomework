@@ -1,0 +1,42 @@
+nl -b a artifacts/test.txt >> artifacts/nl_commands
+     1	Hi! This is a sample text.
+     2	It has multiple lines.
+     3	
+     4	And even empty ones! (Also ends with an empty line)
+     5	
+python cli.py nl artifacts/test.txt >> artifacts/nl_commands
+     1  Hi! This is a sample text.
+     2  It has multiple lines.
+     3  
+     4  And even empty ones! (Also ends with an empty line)
+     5  
+nl -b a artifacts/test_long.txt >> artifacts/nl_commands
+     1	Hi! This is a sample text number 2!
+     2	It also has multiple lines.
+     3	
+     4	And even empty ones! (Also does not end with an empty line)
+     5	
+     6	it
+     7	also
+     8	has 
+     9	more
+    10	than
+    11	10
+    12	lines!
+python cli.py nl artifacts/test_long.txt >> artifacts/nl_commands
+     1  Hi! This is a sample text number 2!
+     2  It also has multiple lines.
+     3  
+     4  And even empty ones! (Also does not end with an empty line)
+     5  
+     6  it
+     7  also
+     8  has
+     9  more
+    10  than
+    11  10
+    12  lines!
+python cli.py nl artifacts/test_russian.txt >> artifacts/nl_commands
+     1	А как насчет текста на русском (проверка unicode)?
+nl -b a artifacts/test_russian.txt >> artifacts/nl_commands
+     1  А как насчет текста на русском (проверка unicode)?

@@ -1,0 +1,53 @@
+tail artifacts/test.txt >> artifacts/tail_commands
+Hi! This is a sample text.
+It has multiple lines.
+
+And even empty ones! (Also ends with an empty line)
+
+python cli.py tail artifacts/test.txt >> artifacts/tail_commands
+Hi! This is a sample text.
+It has multiple lines.
+
+And even empty ones! (Also ends with an empty line)
+
+tail artifacts/test.txt artifacts/test_long.txt artifacts/test_russian.txt >> artifacts/tail_commands
+==> artifacts/test.txt <==
+Hi! This is a sample text.
+It has multiple lines.
+
+And even empty ones! (Also ends with an empty line)
+
+
+==> artifacts/test_long.txt <==
+
+And even empty ones! (Also does not end with an empty line)
+
+it
+also
+has 
+more
+than
+10
+lines!
+
+==> artifacts/test_russian.txt <==
+А как насчет текста на русском (проверка unicode)?
+python cli.py tail artifacts/test.txt artifacts/test_long.txt artifacts/test_russian.txt >> artifacts/tail_commands
+==> artifacts/test.txt <==
+Hi! This is a sample text.
+It has multiple lines.
+
+And even empty ones! (Also ends with an empty line)
+
+==> artifacts/test_long.txt <==
+And even empty ones! (Also does not end with an empty line)
+
+it
+also
+has 
+more
+than
+10
+lines!
+==> artifacts/test_russian.txt <==
+А как насчет текста на русском (проверка unicode)?
