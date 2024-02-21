@@ -1,0 +1,12 @@
+Hi! This is a sample text number 2!
+It also has multiple lines.
+
+And even empty ones! (Also does not end with an empty line)
+
+it
+also
+has 
+more
+than
+10
+lines!
