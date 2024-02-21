@@ -1,0 +1,14 @@
+wc artifacts/test.txt >> artifacts/wc_commands
+       5      20     104 artifacts/test.txt
+python cli.py wc artifacts/test.txt >> artifacts/wc_commands
+       5      20     104 artifacts/test.txt
+wc artifacts/test.txt artifacts/test_long.txt artifacts/test_russian.txt >> artifacts/wc_commands
+       5      20     104 artifacts/test.txt
+      12      32     159 artifacts/test_long.txt
+       1       8      84 artifacts/test_russian.txt
+      18      60     347 total
+python cli.py wc artifacts/test.txt artifacts/test_long.txt artifacts/test_russian.txt >> artifacts/wc_commands
+       5      20     104 artifacts/test.txt
+      12      32     159 artifacts/test_long.txt
+       1       8      84 artifacts/test_russian.txt
+      18      60     347 total
