@@ -59,20 +59,21 @@ class TestMatrix(unittest.TestCase):
         self.assertTrue(hash(A) == hash(C))
         self.assertTrue((A != C))
         self.assertTrue((B == D))
-        real_C, real_D = Matrix_np(data[2]), Matrix_np(data[3])
-        self.assertTrue(A @ B != real_C @ real_D)
+        RC, RD = Matrix_np(data[2]), Matrix_np(data[3])
+        self.assertTrue(A @ B != RC @ RD)
         for mat, name in zip(
-            [A, B, C, D, A @ B, real_C @ real_D],
-            ['A', 'B', 'C', 'D', 'AB', 'CD']
+            [A, B, C, D, A @ B, RC @ RD], ['A', 'B', 'C', 'D', 'AB', 'CD']
         ):
             mat.write(f'{name}.txt', dir)
         with open(f'{dir}hash.txt', 'w') as fout:
-            fout.write(cleandoc(
-                rf"""
+            fout.write(
+                cleandoc(
+                    rf"""
                 hash of AB: {hash(A @ B)}
-                hash of CD: {hash(real_C @ real_D)}
+                hash of CD: {hash(RC @ RD)}
                 """
-            ))
+                )
+            )
 
 
 if __name__ == '__main__':
