@@ -1,0 +1,2 @@
+hash of AB: 2
+hash of CD: 1
