@@ -1,0 +1,5 @@
+sent message to A at 0.96s: Hi
+sent message to A at 2.41s: there
+sent message to A at 3.42s: hello
+sent message to A at 6.66s: print smth
+sent message to A at 10.06s: takes so long

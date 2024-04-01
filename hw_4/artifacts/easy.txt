@@ -1,0 +1,39 @@
+Bootstrapping fib:
+Iteration 0 took 0.1383s
+Iteration 1 took 0.1193s
+Iteration 2 took 0.1191s
+Iteration 3 took 0.1193s
+Iteration 4 took 0.1195s
+Iteration 5 took 0.1196s
+Iteration 6 took 0.1197s
+Iteration 7 took 0.1192s
+Iteration 8 took 0.1191s
+Iteration 9 took 0.1191s
+Total time: 1.2138s
+
+Bootstrapping fib using Thread:
+Iteration 0 took 0.4496s
+Iteration 1 took 0.3760s
+Iteration 2 took 0.0000s
+Iteration 3 took 0.0000s
+Iteration 4 took 0.0000s
+Iteration 5 took 0.0000s
+Iteration 6 took 0.0000s
+Iteration 7 took 0.0000s
+Iteration 8 took 0.0000s
+Iteration 9 took 0.0000s
+Total time: 1.1977s
+
+Bootstrapping fib using Process:
+Iteration 0 took 0.2084s
+Iteration 1 took 0.0000s
+Iteration 2 took 0.0000s
+Iteration 3 took 0.0001s
+Iteration 4 took 0.0000s
+Iteration 5 took 0.0135s
+Iteration 6 took 0.0000s
+Iteration 7 took 0.0000s
+Iteration 8 took 0.0000s
+Iteration 9 took 0.0000s
+Total time: 0.2233s
+
